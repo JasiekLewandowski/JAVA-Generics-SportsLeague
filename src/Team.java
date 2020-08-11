@@ -6,15 +6,12 @@ public abstract class Team<T> implements Comparable<Team<T>> {
         this.name = name;
         this.score = score;
     }
-
     public String getName() {
         return name;
     }
-
     public int getScore() {
         return score;
     }
-
     @Override
     public int compareTo(Team<T> opponents) {
         if (this.score > opponents.getScore())

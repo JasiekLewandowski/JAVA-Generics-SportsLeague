@@ -1,6 +1,5 @@
 public class Main {
     public static void main(String[] args) {
-
         League<FootballTeam> worldcup = new League<>("Worldcup");
         FootballTeam england = new FootballTeam("England", 7);
         FootballTeam spain = new FootballTeam("Spain", 10);
@@ -12,12 +11,6 @@ public class Main {
         worldcup.addTeam(italy);
         worldcup.addTeam(poland);
         worldcup.addTeam(latvia);
-
         worldcup.showLeagueBoard();
-
-        /*League<BaseballTeam> americaBaseball = new League<>("America Baseball Championship");
-        BaseballTeam australiaB = new BaseballTeam("Australia", 5);
-        americaBaseball.addTeam(australiaB); */
-
     }
 }

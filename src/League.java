@@ -8,7 +8,6 @@ public class League<T extends Team>   {
     public League(String name) {
         this.name = name;
     }
-
     public boolean addTeam(T team){
         if (team != null){
             leagueBoard.add(team);
@@ -18,7 +17,6 @@ public class League<T extends Team>   {
         System.out.println("Invalid data");
         return false;
     }
-
     public void showLeagueBoard() {
         Collections.sort(leagueBoard);
         for (T t : leagueBoard){
